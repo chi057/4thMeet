@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_4thMeet"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="411.8" Width="307.215">
+    <Grid Margin="0,0,-5.8,-0.2">
+        <TextBox x:Name="Show" HorizontalAlignment="Left" Height="54" Margin="80,14,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="193" FontSize="40" HorizontalContentAlignment="Right"/>
+        <Button Content="AC" HorizontalAlignment="Left" Margin="30,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="7" HorizontalAlignment="Left" Margin="81,83,0,0" VerticalAlignment="Top" Width="42" Height="57" FontSize="20"/>
+        <Button Content="8" HorizontalAlignment="Left" Margin="131,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="9" HorizontalAlignment="Left" Margin="182,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="231,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="&lt;&lt;" HorizontalAlignment="Left" Margin="30,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="4" HorizontalAlignment="Left" Margin="81,153,0,0" VerticalAlignment="Top" Width="42" Height="57" FontSize="20"/>
+        <Button Content="5" HorizontalAlignment="Left" Margin="131,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="6" HorizontalAlignment="Left" Margin="181,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="231,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button Content="1" HorizontalAlignment="Left" Margin="81,224,0,0" VerticalAlignment="Top" Width="42" Height="56" FontSize="20"/>
+        <Button Content="2" HorizontalAlignment="Left" Margin="131,224,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button Content="3" HorizontalAlignment="Left" Margin="182,224,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="231,224,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button Content="%" HorizontalAlignment="Left" Margin="30,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="81,293,0,0" VerticalAlignment="Top" Width="42" Height="56" FontSize="20"/>
+        <Button Content="0" HorizontalAlignment="Left" Margin="131,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="182,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="231,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
     </Grid>
 </Window>
