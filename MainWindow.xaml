@@ -13,7 +13,7 @@
         <Button x:Name="BtnEight" Content="8" HorizontalAlignment="Left" Margin="131,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20" Click="BtnEight_Click"/>
         <Button x:Name="BtnNine" Content="9" HorizontalAlignment="Left" Margin="182,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20" Click="BtnNine_Click"/>
         <Button x:Name="BtnDivide" Content="/" HorizontalAlignment="Left" Margin="231,83,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20" Click="BtnDivide_Click"/>
-        <Button Content="&lt;&lt;" HorizontalAlignment="Left" Margin="30,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20"/>
+        <Button x:Name="BtnBack" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="30,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20" Click="BtnBack_Click"/>
         <Button x:Name="BtnFour" Content="4" HorizontalAlignment="Left" Margin="81,153,0,0" VerticalAlignment="Top" Width="42" Height="57" FontSize="20" Click="BtnFour_Click"/>
         <Button x:Name="BtnFive" Content="5" HorizontalAlignment="Left" Margin="131,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20" Click="BtnFive_Click"/>
         <Button x:Name="BtnSix" Content="6" HorizontalAlignment="Left" Margin="181,153,0,0" VerticalAlignment="Top" Width="43" Height="57" FontSize="20" Click="BtnSix_Click"/>
@@ -22,7 +22,7 @@
         <Button x:Name="BtnTwo" Content="2" HorizontalAlignment="Left" Margin="131,224,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20" Click="BtnTwo_Click"/>
         <Button x:Name="BtnThree" Content="3" HorizontalAlignment="Left" Margin="182,224,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20" Click="BtnThree_Click"/>
         <Button x:Name="BtnMinus" Content="-" HorizontalAlignment="Left" Margin="231,224,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20" Click="BtnMinus_Click"/>
-        <Button x:Name="BtnPercent" Content="%" HorizontalAlignment="Left" Margin="30,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20"/>
+        <Button x:Name="BtnPercent" Content="%" HorizontalAlignment="Left" Margin="30,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20" Click="BtnPercent_Click"/>
         <Button x:Name="BtnDot" Content="." HorizontalAlignment="Left" Margin="81,293,0,0" VerticalAlignment="Top" Width="42" Height="56" FontSize="20" Click="BtnDot_Click"/>
         <Button x:Name="BtnZero" Content="0" HorizontalAlignment="Left" Margin="131,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20" Click="BtnZero_Click"/>
         <Button x:Name="BtnEqual" Content="=" HorizontalAlignment="Left" Margin="182,293,0,0" VerticalAlignment="Top" Width="43" Height="56" FontSize="20" Click="BtnEqual_Click"/>

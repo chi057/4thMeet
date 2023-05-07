@@ -142,7 +142,7 @@ namespace _4thMeet
         {
             if (Show.Text.IndexOf(".") == -1)
                 Show.Text = Show.Text + ".";
-        }
+        }   
 
         private void BtnClear_Click(object sender, RoutedEventArgs e)
         {
@@ -150,9 +150,30 @@ namespace _4thMeet
             firstNumber = 0f;
             secondNumber = 0f;
             operators = -1;
-
         }
 
+        private void BtnPercent_Click(object sender, RoutedEventArgs e)
+        {
+            double result;
+            if (Show.Text.Length > 0)
+            {
+                if (double.TryParse(Show.Text, out result) == true)
+                {
+                    Show.Text = string.Format("{0:0.####}", result / 100);
+                }
+            }
+        }
 
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            if (Show.Text.Length > 1)
+            {
+                Show.Text = Show.Text.Substring(0, Show.Text.Length - 1);
+            }
+            else if (Show.Text.Length == 1)
+            {
+                Show.Text = "0";
+            }
+        }
     }
 }
