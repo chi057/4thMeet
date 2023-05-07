@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Calculator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,8 +21,8 @@ namespace _4thMeet
     /// </summary>
     public partial class MainWindow : Window
     {
-        private float firstNumber, secondNumber;
-        private int operators = -1;
+        Calculate calculate = new Calculate(); 
+        int operators = -1;
 
         public MainWindow()
         {
@@ -106,7 +107,7 @@ namespace _4thMeet
 
         private void Select_Operator(int _operator)
         {
-            firstNumber = Convert.ToSingle(Show.Text);
+            calculate.firstNumber = Convert.ToSingle(Show.Text);
             Show.Text = "0";
             operators = _operator;
         }
@@ -114,29 +115,27 @@ namespace _4thMeet
         private void BtnEqual_Click(object sender, RoutedEventArgs e)
         {
             float finalResults = 0f;
-            secondNumber = Convert.ToSingle(Show.Text);
+            calculate.secondNumber = Convert.ToSingle(Show.Text);
 
             switch (operators)
             {
                 case 0:
-                    finalResults = firstNumber + secondNumber;
+                    finalResults = calculate.Add();
                     break;
                 case 1:
-                    finalResults = firstNumber - secondNumber;
+                    finalResults = calculate.Subtract();
                     break;
                 case 2:
-                    finalResults = firstNumber * secondNumber;
+                    finalResults = calculate.Multiply();
                     break;
                 case 3:
-                    finalResults = firstNumber / secondNumber;
+                    finalResults = calculate.Divide();
                     break;
             }
 
             Show.Text = string.Format("{0:0.##########}", finalResults);
 
-            firstNumber = 0f;
-            secondNumber = 0f;
-            operators = -1;
+            calculate.Reset();
         }
         private void BtnDot_Click(object sender, RoutedEventArgs e)
         {
@@ -147,9 +146,7 @@ namespace _4thMeet
         private void BtnClear_Click(object sender, RoutedEventArgs e)
         {
             Show.Text = "0";
-            firstNumber = 0f;
-            secondNumber = 0f;
-            operators = -1;
+            calculate.Reset();
         }
 
         private void BtnPercent_Click(object sender, RoutedEventArgs e)
